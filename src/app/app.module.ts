@@ -7,13 +7,17 @@ import { PassGeneratorComponent } from './components/pass-generator/pass-generat
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CardsComponent } from './components/cards/cards.component';
+import { CardComponent } from './components/cards/card/card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PassGeneratorComponent,
-    HomeComponent
+    HomeComponent,
+    CardsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
