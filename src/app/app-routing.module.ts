@@ -1,3 +1,4 @@
+import { TypingComponent } from './components/typing/typing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CardsComponent } from './components/cards/cards.component';
@@ -13,10 +14,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'pass-generator', component: PassGeneratorComponent },
   { path: 'cards', component: CardsComponent },
+  { path: 'typing', component: TypingComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
+import { TypingComponent } from './components/typing/typing.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CardComponent } from './components/cards/card/card.component';
     PassGeneratorComponent,
     HomeComponent,
     CardsComponent,
-    CardComponent
+    CardComponent,
+    TypingComponent
   ],
   imports: [
     BrowserModule,

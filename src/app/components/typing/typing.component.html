@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="columns is-centered">
+    <div class="box column is-one-third">
+      <h1 class="title has-text-centered">Typing Challenge</h1>
+
+      <p class="has-text-centered">
+        <span
+          [class]="compare(letter, enteredText[i])"
+          *ngFor="let letter of randomText.split(''); let i = index"
+          >{{ letter }}</span
+        >
+      </p>
+
+      <div class="field">
+        <input
+          [disabled]="disableInput"
+          class="input"
+          (input)="onInput($event.target.value)"
+          [value]="defaultValue"
+        />
+      </div>
+
+      <div class="box has-text-centered" *ngIf="isTypingMatch">
+        <h1 class="title">Success!</h1>
+        <span class="reset" (click)="resetGame()">Reset</span>
+      </div>
+    </div>
+  </div>
+</div>
