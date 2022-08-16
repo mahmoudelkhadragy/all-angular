@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { TypingComponent } from './components/typing/typing.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TypingComponent } from './components/typing/typing.component';
     HomeComponent,
     CardsComponent,
     CardComponent,
-    TypingComponent
+    TypingComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
