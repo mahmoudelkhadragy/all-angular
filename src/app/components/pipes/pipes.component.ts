@@ -7,9 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesComponent implements OnInit {
 
-  constructor() { }
+  name: string;
+  date: string;
+  amount: number;
+  height: number;
+  mile: number;
+
+  gender: string = 'male';
+  inviteMap: any = {'male': 'Invite him.', 'female': 'Invite her.', 'other': 'Invite them.'};
+
+  constructor() { }20
 
   ngOnInit(): void {
+  }
+
+  onNameChange(val){
+    this.name = val;
+  }
+
+  onGenderChange(val){
+    this.gender = val;
+  }
+  onDateChange(val){
+    this.date = val;
+  }
+  onAmountChange(val){
+    this.amount = parseFloat(val);
+  }
+  onHeightChange(val){
+    this.height = parseFloat(val);
+  }
+  onMileChange(val){
+    this.mile = parseFloat(val);
   }
 
 }
