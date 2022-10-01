@@ -11,6 +11,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { TypingComponent } from './components/typing/typing.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ConvertPipe } from './custom-pipes/convert.pipe';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
     CardsComponent,
     CardComponent,
     TypingComponent,
-    PipesComponent
+    PipesComponent,
+    ConvertPipe
   ],
   imports: [
     BrowserModule,
