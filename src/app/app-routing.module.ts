@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardsComponent } from './components/cards/cards.component';
 import { HomeComponent } from './components/home/home.component';
 import { PassGeneratorComponent } from './components/pass-generator/pass-generator.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'cards', component: CardsComponent },
   { path: 'typing', component: TypingComponent },
   { path: 'pipes', component: PipesComponent },
+  { path: 'pagination', component: PaginationComponent },
 ];
 
 @NgModule({

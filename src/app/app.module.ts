@@ -12,6 +12,7 @@ import { CardComponent } from './components/cards/card/card.component';
 import { TypingComponent } from './components/typing/typing.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ConvertPipe } from './custom-pipes/convert.pipe';
     CardComponent,
     TypingComponent,
     PipesComponent,
-    ConvertPipe
+    ConvertPipe,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
