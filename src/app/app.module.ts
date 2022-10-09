@@ -14,6 +14,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { AppClassDirective } from './custom-directives/app-class.directive';
+import { RepeatElementDirective } from './custom-directives/repeat-element.directive';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AppClassDirective } from './custom-directives/app-class.directive';
     PipesComponent,
     ConvertPipe,
     PaginationComponent,
-    AppClassDirective
+    AppClassDirective,
+    RepeatElementDirective
   ],
   imports: [
     BrowserModule,
