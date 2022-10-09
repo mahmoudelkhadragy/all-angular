@@ -13,6 +13,7 @@ import { TypingComponent } from './components/typing/typing.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { AppClassDirective } from './custom-directives/app-class.directive';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     TypingComponent,
     PipesComponent,
     ConvertPipe,
-    PaginationComponent
+    PaginationComponent,
+    AppClassDirective
   ],
   imports: [
     BrowserModule,
