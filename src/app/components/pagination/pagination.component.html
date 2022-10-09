@@ -1,19 +1,19 @@
 <nav class="container">
   <div class="content m-auto text-center">
-    <h3 appClass [backgroundColor]=" '#09c' " class="py-2 mt-3">{{images[currentPage].title}}</h3>
-    <img class="img-fluid" [src]="images[currentPage].url" [alt]="images[currentPage].title">
+    <h3 class="py-2 mt-3">{{images[currentPage].title}}</h3>
+    <img class="w-100" [src]="images[currentPage].url" [alt]="images[currentPage].title">
   </div>
   <ul class="pagination justify-content-center mt-3">
-    <li class="page-item" [ngClass]="{disabled: currentPage === 0}">
+    <li class="page-item" [appClass]="{disabled: currentPage === 0}">
       <a class="page-link" (click)="currentPage = currentPage - 1">Previous</a>
     </li>
     <ng-container *ngFor="let image of images; let i = index">
-      <li class="page-item" [ngClass]="{active: i === currentPage}" *ngIf="checkWindowIndex(i)">
+      <li class="page-item" [appClass]="{active: i === currentPage}" *ngIf="checkWindowIndex(i)">
         <a class="page-link" (click)="currentPage = i">{{ i + 1 }}</a>
       </li>
     </ng-container>
 
-    <li class="page-item" [ngClass]="{disabled: currentPage === images.length - 1 }">
+    <li class="page-item" [appClass]="{disabled: currentPage === images.length - 1 }">
       <a class="page-link" (click)="currentPage = currentPage + 1">Next</a>
     </li>
   </ul>
