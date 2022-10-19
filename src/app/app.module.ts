@@ -16,6 +16,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { AppClassDirective } from './custom-directives/app-class.directive';
 import { RepeatElementDirective } from './custom-directives/repeat-element.directive';
 
+import { ElementsModule } from './elements/elements.module';
 
 @NgModule({
   declarations: [
@@ -29,13 +30,14 @@ import { RepeatElementDirective } from './custom-directives/repeat-element.direc
     ConvertPipe,
     PaginationComponent,
     AppClassDirective,
-    RepeatElementDirective
+    RepeatElementDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ElementsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
