@@ -13,8 +13,6 @@ import { ElementHomesComponent } from './element-homes/element-homes.component';
     CommonModule,
     ElementsRoutingModule
   ],
-  exports: [
-    ElementHomesComponent
-  ]
+  exports: []
 })
 export class ElementsModule { }
