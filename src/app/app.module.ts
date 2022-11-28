@@ -17,6 +17,8 @@ import { AppClassDirective } from './custom-directives/app-class.directive';
 import { RepeatElementDirective } from './custom-directives/repeat-element.directive';
 
 import { ElementsModule } from './elements/elements.module';
+import { CollectionsModule } from './collections/collections.module';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,15 @@ import { ElementsModule } from './elements/elements.module';
     PaginationComponent,
     AppClassDirective,
     RepeatElementDirective,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ElementsModule
+    ElementsModule,
+    CollectionsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TypingComponent } from './components/typing/typing.component';
@@ -8,17 +9,14 @@ import { PassGeneratorComponent } from './components/pass-generator/pass-generat
 import { PaginationComponent } from './components/pagination/pagination.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'pass-generator', component: PassGeneratorComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'typing', component: TypingComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'pagination', component: PaginationComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

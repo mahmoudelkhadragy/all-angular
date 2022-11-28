@@ -1,0 +1,12 @@
+nav .nav_link{
+  display: inline-block;
+  color: #555;
+  padding: 6px 15px;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+nav .nav_link.active{
+  color: #F75C1E;
+}
