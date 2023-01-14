@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { ElementsRoutingModule } from './elements-routing.module';
 import { ElementHomesComponent } from './element-homes/element-homes.component';
+import { PlaceholderComponent } from './placeholder/placeholder.component';
+import { RepeatElementDirective } from '../custom-directives/repeat-element.directive';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    ElementHomesComponent
+    ElementHomesComponent,
+    PlaceholderComponent,
   ],
   imports: [
     CommonModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SharedModule
   ],
   exports: []
 })
