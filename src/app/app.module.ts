@@ -14,11 +14,8 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { AppClassDirective } from './custom-directives/app-class.directive';
-import { RepeatElementDirective } from './custom-directives/repeat-element.directive';
-
-import { ElementsModule } from './elements/elements.module';
-import { CollectionsModule } from './collections/collections.module';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -32,16 +29,14 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     ConvertPipe,
     PaginationComponent,
     AppClassDirective,
-    RepeatElementDirective,
     NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ElementsModule,
-    CollectionsModule,
     AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
