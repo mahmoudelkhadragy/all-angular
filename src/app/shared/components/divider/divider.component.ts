@@ -7,11 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DividerComponent implements OnInit {
 
-  @Input() title: string;
-
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
