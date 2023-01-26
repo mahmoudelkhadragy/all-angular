@@ -1,0 +1,7 @@
+:host h2{
+  padding-top: 10px;
+}
+:host:not(:first-of-type){
+  display: block;
+  margin-top: 12px;
+}
