@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'collections', loadChildren: () => import('./collections/collections.module').then((m)=> m.CollectionsModule)},
   { path: 'views', loadChildren: () => import('./views/views.module').then((m)=> m.ViewsModule)},
   { path: 'mods', loadChildren: () => import('./mods/mods.module').then((m)=> m.ModsModule)},
+  { path: 'search', loadChildren: () => import('./search/search.module').then((m)=> m.SearchModule)},
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'pass-generator', component: PassGeneratorComponent },
