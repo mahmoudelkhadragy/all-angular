@@ -8,15 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeSearchComponent implements OnInit {
 
+  pages = []
+  isloading = false;
+  noSearchResults = false;
+
   constructor(private wikipediaService: WikipediaService ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onTerm(term: string){
-    const result = this.wikipediaService.search(term);
-    console.log(result);
-
+    this.isloading = true;
+    this.wikipediaService.search(term).subscribe((res: any)=>{
+      this.isloading = false;
+      this.pages = res.query.search;
+      (res.query.search.length === 0)? this.noSearchResults = true : this.noSearchResults = false
+    })
   }
 
 }

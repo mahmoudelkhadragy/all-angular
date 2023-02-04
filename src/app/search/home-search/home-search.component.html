@@ -1,2 +1,11 @@
+<app-divider>Wikipedia Search</app-divider>
+
 <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
-<app-page-list></app-page-list>
+
+<h3 *ngIf="pages.length === 0" class="search_title">Here is the search Result</h3>
+
+<div *ngIf="isloading" class="ui active centered inline loader"></div>
+
+<p *ngIf="noSearchResults && !isloading" class="centered">No search found</p>
+
+<app-page-list *ngIf="pages.length > 0 && !isloading" [pages]="pages"></app-page-list>
