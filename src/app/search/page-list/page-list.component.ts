@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Page } from 'src/app/models/page.model';
 
 @Component({
   selector: 'app-page-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageListComponent implements OnInit {
 
+  @Input() pages: Page[] = [];
+  headers = [
+    { key: 'title', label: 'Title' },
+    { key: 'wordcount', label: 'Word Count' },
+    { key: 'snippet', label: 'Snippet' }
+  ];
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
