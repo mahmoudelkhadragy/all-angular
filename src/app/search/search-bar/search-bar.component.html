@@ -1,3 +1,6 @@
 <form (submit)="onSearchSubmit($event)">
-  <input (input)="term = $event.target.value">
+  <div class="ui large icon input">
+    <input (input)="term = $event.target.value" placeholder="Search large..." type="text">
+    <i class="search icon"></i>
+  </div>
 </form>

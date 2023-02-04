@@ -19,7 +19,6 @@ export class SearchBarComponent implements OnInit {
   onSearchSubmit(e){
     e.preventDefault();
     this.submitted.emit(this.term);
-
   }
 
 }
