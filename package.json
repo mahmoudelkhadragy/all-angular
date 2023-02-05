@@ -20,7 +20,6 @@
     "@angular/router": "~12.2.0",
     "@types/faker": "^5.5.9",
     "bootstrap": "^4.6.2",
-    "bulma": "^0.9.4",
     "faker": "^5.5.3",
     "rxjs": "~6.6.0",
     "semantic-ui-css": "^2.5.0",
