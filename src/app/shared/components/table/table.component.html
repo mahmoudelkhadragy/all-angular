@@ -8,9 +8,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let record of data">
-      <td *ngFor="let header of headers">
-        {{record[header.key]}}
-      </td>
+      <td *ngFor="let header of headers" [innerHTML]="record[header.key]"></td>
     </tr>
   </tbody>
 </table>

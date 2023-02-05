@@ -9,11 +9,11 @@ import { Page } from 'src/app/models/page.model';
 export class PageListComponent implements OnInit {
 
   @Input() pages: Page[] = [];
-  headers = [
-    { key: 'title', label: 'Title' },
-    { key: 'wordcount', label: 'Word Count' },
-    { key: 'snippet', label: 'Snippet' }
-  ];
+  // headers = [
+  //   { key: 'title', label: 'Title' },
+  //   { key: 'wordcount', label: 'Word Count' },
+  //   { key: 'snippet', label: 'Snippet' }
+  // ];
 
   constructor() { }
 
