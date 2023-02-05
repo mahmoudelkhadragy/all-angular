@@ -10,3 +10,7 @@ nav .nav_link{
 nav .nav_link.active{
   color: #F75C1E;
 }
+.body_container{
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
