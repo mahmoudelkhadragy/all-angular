@@ -1,15 +1,13 @@
 <div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img [src]="post.imageUrl" />
-    </figure>
+  <div class="image">
+    <img [src]="post.imageUrl">
   </div>
-  <div class="card-content">
-    <div class="media-content">
-      <p class="title is-4">{{ post.title }}</p>
-      <p class="subtitle is-6">{{ post.username }}</p>
+  <div class="content">
+    <div class="header">{{ post.title }}</div>
+    <div class="meta">
+      <a>{{ post.username }}</a>
     </div>
-    <div class="content">
+    <div class="description">
       {{ post.content }}
     </div>
   </div>
