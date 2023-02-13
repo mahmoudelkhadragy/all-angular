@@ -18,10 +18,10 @@ export class HomeSearchComponent implements OnInit {
 
   onTerm(term: string){
     this.isloading = true;
-    this.wikipediaService.search(term).subscribe((res: any)=>{
+    this.wikipediaService.search(term).subscribe((res)=>{
       this.isloading = false;
-      this.pages = res.query.search;
-      (res.query.search.length === 0)? this.noSearchResults = true : this.noSearchResults = false
+      this.pages = res;
+      (res.length === 0)? this.noSearchResults = true : this.noSearchResults = false
     })
   }
 
