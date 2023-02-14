@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <button class="ui secondary button" (click)="onGetRandomPhoto()">Get Random Photo</button>
+
+  <div class="photo_wrapper">
+    <img *ngIf="photo; else nophoto" [src]="photo" alt="random photo">
+    <ng-template #nophoto>
+      There is no Random photo
+    </ng-template>
+  </div>
+</div>

@@ -7,6 +7,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { HomeComponent } from './components/home/home.component';
 import { PassGeneratorComponent } from './components/pass-generator/pass-generator.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 
 const routes: Routes = [
   { path: 'elements', loadChildren: () => import('./elements/elements.module').then((m)=> m.ElementsModule)},
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'typing', component: TypingComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'pagination', component: PaginationComponent },
+  { path: 'randomphoto', component: RandomPhotoComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

@@ -16,6 +16,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { AppClassDirective } from './custom-directives/app-class.directive';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
+import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SharedModule } from './shared/shared.module';
     PaginationComponent,
     AppClassDirective,
     NotFoundComponent,
+    RandomPhotoComponent,
   ],
   imports: [
     BrowserModule,
