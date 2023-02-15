@@ -12,10 +12,15 @@ export class RandomPhotoComponent implements OnInit {
 
   constructor(private randomPhotoService: RandomPhotoService) { }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    this.fetchRandomPhoto();
+  }
 
   onGetRandomPhoto(){
+    this.fetchRandomPhoto();
+  }
+
+fetchRandomPhoto(){
     this.randomPhotoService.getRandomPhoto().subscribe(res =>{
       this.photo = res;
     });

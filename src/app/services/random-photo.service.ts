@@ -5,7 +5,7 @@ import { pluck } from 'rxjs/operators';
 const AccessKey = 'B2zCH2WcQ2YLwf4TguoiYHcy9keuPWERqI41G6D-vU0';
 interface RandomPhoto{
   urls: {
-    small:string;
+    regular:string;
   }
 }
 
@@ -23,7 +23,7 @@ export class RandomPhotoService {
       headers:{
         Authorization: `Client-ID ${AccessKey}`
       }
-    }).pipe(pluck('urls', 'small'));
+    }).pipe(pluck('urls', 'regular'));
   }
 
 }
