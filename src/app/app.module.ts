@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PassGeneratorComponent } from './components/pass-generator/pass-generator.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { TypingComponent } from './components/typing/typing.component';
@@ -17,6 +17,7 @@ import { AppClassDirective } from './custom-directives/app-class.directive';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
 import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
+import { PaymentCardComponent } from './components/payment-card/payment-card.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +33,15 @@ import { RandomPhotoComponent } from './components/random-photo/random-photo.com
     AppClassDirective,
     NotFoundComponent,
     RandomPhotoComponent,
+    PaymentCardComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

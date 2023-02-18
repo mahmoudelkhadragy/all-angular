@@ -25,6 +25,4 @@ fetchRandomPhoto(){
       this.photo = res;
     });
   }
-
-
 }
