@@ -1,1 +1,17 @@
-<p>payment-card works!</p>
+<form [formGroup]="cardForm">
+  <input formControlName="name">
+  <ng-container *ngIf="cardForm.controls.name.errors">
+    <div *ngIf="cardForm.controls.name.errors.required">
+      Value is required
+    </div>
+    <div *ngIf="cardForm.controls.name.errors.minlength">
+      Value must be more than 3 characters
+    </div>
+  </ng-container>
+
+</form>
+
+<div>Form Contents: {{cardForm.value | json }}</div>
+<div>Form is Valid: {{cardForm.valid }}</div>
+
+<!-- <div>Errors around name: {{cardForm.controls.name.errors | json }}</div> -->
