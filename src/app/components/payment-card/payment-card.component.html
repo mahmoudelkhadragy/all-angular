@@ -1,14 +1,9 @@
-<form [formGroup]="cardForm">
-  <input formControlName="name">
-  <ng-container *ngIf="cardForm.controls.name.errors">
-    <div *ngIf="cardForm.controls.name.errors.required">
-      Value is required
-    </div>
-    <div *ngIf="cardForm.controls.name.errors.minlength">
-      Value must be more than 3 characters
-    </div>
-  </ng-container>
-
+<form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+  <app-input label="Name" [control]="cardForm.get('name')"></app-input>
+  <app-input label="Card Number" [control]="cardForm.get('cardNumber')"></app-input>
+  <app-input label="expiration" [control]="cardForm.get('expiration')"></app-input>
+  <app-input label="Security Code" [control]="cardForm.get('securityCode')"></app-input>
+  <button class="ui secondary button mt-3" type="submit" [disabled]="cardForm.invalid">Submit</button>
 </form>
 
 <div>Form Contents: {{cardForm.value | json }}</div>
