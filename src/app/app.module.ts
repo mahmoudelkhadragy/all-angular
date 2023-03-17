@@ -18,6 +18,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SharedModule } from './shared/shared.module';
 import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 import { PaymentCardComponent } from './components/payment-card/payment-card.component';
+import { CardInfoComponent } from './components/payment-card/card-info/card-info.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PaymentCardComponent } from './components/payment-card/payment-card.com
     NotFoundComponent,
     RandomPhotoComponent,
     PaymentCardComponent,
+    CardInfoComponent,
   ],
   imports: [
     BrowserModule,
