@@ -19,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
 import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 import { PaymentCardComponent } from './components/payment-card/payment-card.component';
 import { CardInfoComponent } from './components/payment-card/card-info/card-info.component';
+import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CardInfoComponent } from './components/payment-card/card-info/card-info
     RandomPhotoComponent,
     PaymentCardComponent,
     CardInfoComponent,
+    SimpleFormComponent,
   ],
   imports: [
     BrowserModule,

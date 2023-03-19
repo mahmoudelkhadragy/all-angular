@@ -9,6 +9,7 @@ import { PassGeneratorComponent } from './components/pass-generator/pass-generat
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 import { PaymentCardComponent } from './components/payment-card/payment-card.component';
+import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 
 const routes: Routes = [
   { path: 'elements', loadChildren: () => import('./elements/elements.module').then((m)=> m.ElementsModule)},
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'pagination', component: PaginationComponent },
   { path: 'randomphoto', component: RandomPhotoComponent },
   { path: 'paymentcard', component: PaymentCardComponent },
+  { path: 'simple-form', component: SimpleFormComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
