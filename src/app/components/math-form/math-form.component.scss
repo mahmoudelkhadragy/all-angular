@@ -1,0 +1,31 @@
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+form span{font-size: 3.5em;}
+
+form input{
+  font-size: 3.5em;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 100px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.state{
+  margin-top: 40px;
+}

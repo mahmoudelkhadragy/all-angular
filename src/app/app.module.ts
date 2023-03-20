@@ -20,6 +20,7 @@ import { RandomPhotoComponent } from './components/random-photo/random-photo.com
 import { PaymentCardComponent } from './components/payment-card/payment-card.component';
 import { CardInfoComponent } from './components/payment-card/card-info/card-info.component';
 import { SimpleFormComponent } from './components/simple-form/simple-form.component';
+import { MathFormComponent } from './components/math-form/math-form.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SimpleFormComponent } from './components/simple-form/simple-form.compon
     PaymentCardComponent,
     CardInfoComponent,
     SimpleFormComponent,
+    MathFormComponent,
   ],
   imports: [
     BrowserModule,

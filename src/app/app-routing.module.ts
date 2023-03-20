@@ -10,6 +10,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { RandomPhotoComponent } from './components/random-photo/random-photo.component';
 import { PaymentCardComponent } from './components/payment-card/payment-card.component';
 import { SimpleFormComponent } from './components/simple-form/simple-form.component';
+import { MathFormComponent } from './components/math-form/math-form.component';
 
 const routes: Routes = [
   { path: 'elements', loadChildren: () => import('./elements/elements.module').then((m)=> m.ElementsModule)},
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'randomphoto', component: RandomPhotoComponent },
   { path: 'paymentcard', component: PaymentCardComponent },
   { path: 'simple-form', component: SimpleFormComponent },
+  { path: 'math-form', component: MathFormComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
