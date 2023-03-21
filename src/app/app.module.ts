@@ -21,6 +21,7 @@ import { PaymentCardComponent } from './components/payment-card/payment-card.com
 import { CardInfoComponent } from './components/payment-card/card-info/card-info.component';
 import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 import { MathFormComponent } from './components/math-form/math-form.component';
+import { AnswerHighlightDirective } from './custom-directives/answer-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MathFormComponent } from './components/math-form/math-form.component';
     CardInfoComponent,
     SimpleFormComponent,
     MathFormComponent,
+    AnswerHighlightDirective,
   ],
   imports: [
     BrowserModule,

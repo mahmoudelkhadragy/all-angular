@@ -5,6 +5,11 @@ form{
   align-items: center;
   height: 100%;
 }
+.form_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 form span{font-size: 3.5em;}
 
 form input{
@@ -13,6 +18,7 @@ form input{
   border-bottom: 1px solid #ccc;
   outline: none;
   width: 100px;
+  text-align: center;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -28,4 +34,8 @@ input[type=number] {
 }
 .state{
   margin-top: 40px;
+}
+.close{
+  background-color: rgb(126, 202, 126);
+  border-bottom: 1px solid rgb(66, 158, 66) !important;
 }

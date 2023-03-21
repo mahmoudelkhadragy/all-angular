@@ -1,7 +1,7 @@
 <form [formGroup]="mathForm">
-  <div form_wrapper>
+  <div class="form_wrapper">
     <span>{{a}} + {{b}} = </span>
-    <input formControlName="answer" type="number">
+    <input appAnswerHighlight formControlName="answer" type="number">
   </div>
   <div class="state">{{secondsPerSolution | number: '1.1-3'}}</div>
 </form>
