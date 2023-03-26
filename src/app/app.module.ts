@@ -22,6 +22,7 @@ import { CardInfoComponent } from './components/payment-card/card-info/card-info
 import { SimpleFormComponent } from './components/simple-form/simple-form.component';
 import { MathFormComponent } from './components/math-form/math-form.component';
 import { AnswerHighlightDirective } from './custom-directives/answer-highlight.directive';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AnswerHighlightDirective } from './custom-directives/answer-highlight.d
     AppRoutingModule,
     SharedModule,
     ReactiveFormsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
