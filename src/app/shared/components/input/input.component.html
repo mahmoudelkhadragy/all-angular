@@ -2,6 +2,7 @@
   <label class="label">{{label}}</label>
   <input
   class="input"
+  [type]="inputType"
   [formControl]="control"
   [ngClass]="{'is_danger': showErrors()}"
   >
@@ -16,8 +17,21 @@
       {{control.errors.minlength.requiredLength}}
       characters
     </div>
+    <div class="is_danger" *ngIf="control.errors.maxlength">
+      Value you entered is
+      {{control.errors.maxlength.actualLength}}
+      characters long , but it must be max
+      {{control.errors.maxlength.requiredLength}}
+      characters
+    </div>
     <div class="is_danger" *ngIf="control.errors.pattern">
       Invalid formate
+    </div>
+    <div class="is_danger" *ngIf="control.errors.nonUniqueUsername">
+      Username is taken
+    </div>
+    <div class="is_danger" *ngIf="control.errors.noConnection">
+      Can't tell if username is taken
     </div>
   </ng-container>
 </div>
